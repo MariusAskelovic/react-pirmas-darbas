@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.list_of_products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: #c9ced4; */
+  background-color: #396aa5;
+}
+
+.one_product_card {
+  width: 600px;
+  height: 450px;
+  overflow: hidden;
+  margin: 20px;
+  position: sticky;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 20px;
+}
+
+img {
+  max-width: 592px;
+  min-height: 440px;
+  object-fit: cover;
+  position: absolute;
+  transition: 1s;
+}
+
+.one_product_card:hover img {
+  filter: grayscale(1) blur(5px);
+  opacity: 0.75;
+  transition: 1s;
+}
+
+.name_price {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 592px;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-5px);
+  color: white;
+  background-color: rgba(136, 136, 136, 0.541);
+  border: 1px solid white;
+  opacity: 1;
+  transition: all 2s;
+}
+
+.name {
+  font-size: 1.6em;
+}
+
+.price {
+  font-size: 1.6em;
+}
+
+.one_product_card:hover .name_price {
+  /* opacity: 0; */
+  transform: translateY(380px);
+  transition: all 0.8s;
+  border-top: 5px solid white;
+}
+
+p {
+  position: sticky;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: 1s;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+.one_product_card:hover p {
+  opacity: 1;
+  transition: 1s;
+}

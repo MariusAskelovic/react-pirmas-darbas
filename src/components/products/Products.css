@@ -1,0 +1,9 @@
+.header {
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-color: #cdcfcf88;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 700;
+}

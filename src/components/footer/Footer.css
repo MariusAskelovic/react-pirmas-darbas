@@ -1,0 +1,12 @@
+.Footer {
+  background-image: linear-gradient(#889996, #222);
+  opacity: 0.8;
+  padding: 16px 0 6px 0;
+  display: grid;
+  place-items: center;
+  position: sticky;
+  bottom: 0px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1em;
+}
